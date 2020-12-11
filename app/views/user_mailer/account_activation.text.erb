@@ -1,0 +1,5 @@
+<%= @user.name %>様
+
+ご利用頂きありがとうございます。
+下記リンクをクリックして、メールアドレスを有効化して下さい。
+<%= edit_account_activation_url(@user.activation_token, email: @user.email) %>
